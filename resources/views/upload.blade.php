@@ -17,6 +17,15 @@
             </ul>
         </div>
     @endif
+    @if (session('successes'))
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+            <ul class="list-disc pl-5">
+                @foreach (session('successes') as $success)
+                    <li>{{ $success }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form action="{{ url('/upload') }}" method="POST" enctype="multipart/form-data" class="max-w-md mx-auto bg-white p-8 shadow-md rounded-lg">
         @csrf
         <div class="mb-4">

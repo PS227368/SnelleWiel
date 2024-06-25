@@ -17,3 +17,8 @@ Route::post('/upload', [FileUploadController::class, 'upload']);
 
 // Route voor het weergeven van de pagina om de gegevens te bekijken
 Route::get('/orders', [OrderController::class, 'index']);
+
+Route::post('/orders/{orderId}/update-status', [OrderController::class, 'updateStatus'])->name('orders.updateStatus');
+
+Route::get('/orders/export', [OrderController::class, 'export'])->name('orders.export');
+

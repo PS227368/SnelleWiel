@@ -12,12 +12,14 @@ class Order extends Model
         'order_number',
         'order_line_number',
         'product_name',
-        'product_height_cm', // Updated column name
-        'product_weight_g',  // Updated column name
+        'product_height_cm',
+        'product_weight_g',
         'customer_name',
         'customer_address',
         'customer_city',
         'customer_postal_code',
         'customer_phone',
+        'status',
+
     ];
 }

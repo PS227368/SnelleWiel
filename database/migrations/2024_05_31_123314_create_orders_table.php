@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('customer_city');
             $table->string('customer_postal_code');
             $table->string('customer_phone');
+            $table->string('status');
             $table->timestamps();
         });
     }

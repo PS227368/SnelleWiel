@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snelle Vingers</title>
     @vite('resources/css/app.css')
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!-- Navigation Bar -->
